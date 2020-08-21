@@ -56,7 +56,7 @@ Only users that are member of any of the groups listed above should have access 
 
 
 
-## Prerequisits:
+## Prerequisites:
 Creation of the Cognito User Pool, API Gateway and/or frontend app is not included in this package.
 - The Cognito JWT should look as follow:
 ```json
