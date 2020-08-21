@@ -98,7 +98,7 @@ def generatePolicyDocument(effect, methodArn):
 
 
 def returnPath(methodArn):
-    delimiters = "/GET", "/POST", "/OPTIONS", "HEAD", "?"
+    delimiters = "/GET", "/POST", "/OPTIONS", "/HEAD", "/PUT", "/DELETE", "/PATCH", "/ANY", "?"
     regexPattern = '|'.join(map(re.escape, delimiters))
     return re.split(regexPattern, methodArn)[1]
 
