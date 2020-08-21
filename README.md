@@ -88,6 +88,9 @@ Creation of the Cognito User Pool, API Gateway and/or frontend app is not includ
     }
 ```
 - Authorization caching should be disabled.
+- To return the authorizer response for access denied (403) you need to set the response template for Access Denied Gateway Response of your API to:
+Response template media type: ```application/json```
+Response template body: ```{"message":$context.authorizer.errorMessage}```   
 - You need to provide the artefact bucket where cloudformation will store the resources code. The bucket must be located in the same region where the stack will be created.
 
 ## Deployment commands: 
