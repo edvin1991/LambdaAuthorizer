@@ -4,13 +4,13 @@
 SHELL := /bin/bash
 
 ##Parameters
-AWS_REGION			 	?= us-east-1
+AWS_REGION			 	?= eu-central-1
 COGNITO_REGION		 	?= eu-central-1
 STACK_NAME 		  	 	?= LambdaAuthorizer
-COGNITO_APP_CLIENT_ID 	?= 32un998vgv93lt3sd56cff7oqi
-COGNITO_USER_POOL_ID	?= eu-central-1_jFzGA5opU
+COGNITO_APP_CLIENT_ID 	?= client-id
+COGNITO_USER_POOL_ID	?= eu-central-1_userpool
 DEFAULT_CALL_LIMIT		?= 50
-ARTEFACT_S3_BUCKET		?= ehallvax-authorizer
+ARTEFACT_S3_BUCKET		?= example-bucket
 ##System paramteres
 current_dir 	:=  $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 SOURCE_TEMPLATE	:=	$(current_dir)/CloudFormationTemplate.yaml

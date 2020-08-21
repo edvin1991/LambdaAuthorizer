@@ -4,16 +4,13 @@ Description: An AWS Serverless Specification template describing your function.
 Parameters:
   CognitoAppClientId:
     Type: String
-    Default: 32un998vgv93lt3sd56cff7oqi
   DefaultCallLimit:
     Type: Number
     Default: 50
   CognitoUserPoolId:
     Type: String
-    Default: eu-central-1_jFzGA5opU
   CognitoRegion:
     Type: String
-    Default: eu-centra-1
 Resources:
 #----------------------------Lambda Functions----------------------------
   LambdaAuthorizer:
