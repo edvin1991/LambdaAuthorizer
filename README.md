@@ -3,9 +3,9 @@
 ## Description: 
 This package provides cloudformation and python source code for deployment of a Custom Lambda Authorizer for API Gateway. The solution assumes that Cognito is the identity provider and the user will pass the Cognito JWT into the API Authorization request. The goal of the solution is to enforce quota-limit per user identity and role base access based on group memberships. The user has to pass three checks before being authorized to call the API resource. The cloudformation stack will create the following resources:
 - Lambda Authorizer function.
-- 2 Lambda Layers containing dependencies for the authorizer
+- Lambda Layers containing dependencies for the authorizer
 - IAM Role for Lambda to read/writte from the dynamoDb tables.
-- 2 DynamoDB tables.
+- DynamoDB tables.
 
 
 Lambda Authorizer will perform the following checks:
