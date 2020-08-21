@@ -102,7 +102,7 @@ All deployemnts are done using makefile, following commands are available:
  - ```make apply```                  - Deploys  the specified AWS CloudFormation template by creating and 
                                        then executing a change set. 
  - ```make deploy```                 - executes make cdownloadCognitoJWKS, make build and make apply
- - ```make destroy```                - destroies cloudformation stack
+ - ```make destroy```                - destroys cloudformation stack
  - ```make clean```                  - deletes the artifact bucket and removes Cognito JWKS
 
 
