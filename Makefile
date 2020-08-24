@@ -45,7 +45,7 @@ destroy:
 	--region $(AWS_REGION)
 
 clean:
-	@aws s3 rb s3://$(ARTEFACT_S3_BUCKET) --force \
+	@aws s3 rm s3://$(ARTEFACT_S3_BUCKET) --recursive \
 	--region $(AWS_REGION); rm ./LambdaCode/jwks.json $(OUTPUT_TEMPLATE)
 
 
